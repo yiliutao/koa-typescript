@@ -9,6 +9,7 @@ const ModuleMap: any = {
     order: order,
     finance: finance,
 };
+//分发路由
 function reqRoute(context: Router.RouterContext) {
     let path = context.path;
     let split = path.split("/");

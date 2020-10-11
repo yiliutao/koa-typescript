@@ -2,7 +2,9 @@ import Order from '../models/order';
 
 function getAllOrders(): Array<Order> {
     let result: Array<Order> = [];
-    result.push({ uuid: "2222", orderNum: "222", fromCity: "shanghai", toCity: "beijing" });
+    let orderInst: Order = new Order("2222", "2222", "shanghai", "beijing");
+    result.push(orderInst);
+    console.log("aa");
     return result;
 }
 
